@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBA Website</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .section-highlight-news {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            margin-top: -100px;
+            gap: 30px;
+        }
+
+        .box-highlight-news {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .highlight-news {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-news img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .highlight-news:hover img {
+            transform: scale(1.05);
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .text-overlay p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .text-overlay span {
+            font-size: 14px;
+            font-style: italic;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/pba-logo.png" alt="PBA Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="latest-news.html">Latest News</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-news">
+        <h1>LATEST NEWS</h1>
+    </div>
+
+    <div class="section-highlight-news">
+        <div class="box-highlight-news">
+            <div class="highlight-news" onclick="window.location.href='news/news-1.html'">
+                <div class="image-container">
+                    <img src="images/news/IMG_1195.jpeg" alt="Highlight 1">
+                    <div class="text-overlay">
+                        <p>Commissioner's Cup parades old and new imports</p>
+                        <span>Nov 17, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-news" onclick="window.location.href='news/news-2.html'">
+                <div class="image-container">
+                    <img src="images/news/IMG_1194.jpeg" alt="Highlight 2">
+                    <div class="text-overlay">
+                        <p>Clark or McLaughlin for Hong Kong Eastern import</p>
+                        <span>Nov 16, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-news" onclick="window.location.href='news/news-3.html'">
+                <div class="image-container">
+                    <img src="images/news/IMG_1193.jpeg" alt="Highlight 3">
+                    <div class="text-overlay">
+                        <p>Sluggish Gilas side begins training camp for Asia Cup qualifiers</p>
+                        <span>Nov 15, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-news" onclick="window.location.href='news/news-4.html'">
+                <div class="image-container">
+                    <img src="images/news/IMG_1192.jpeg" alt="Highlight 4">
+                    <div class="text-overlay">
+                        <p>Bolts give Mitchell warm welcome</p>
+                        <span>Nov 14, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-news" onclick="window.location.href='news/news-5.html'">
+                <div class="image-container">
+                    <img src="images/news/IMG_1190.jpeg" alt="Highlight 5">
+                    <div class="text-overlay">
+                        <p>Bolts rally past reigning KBL champions</p>
+                        <span>Nov 13, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-news" onclick="window.location.href='news/news-6.html'">
+                <div class="image-container">
+                    <img src="images/news/IMG_1188.jpeg" alt="Highlight 6">
+                    <div class="text-overlay">
+                        <p>Brownlee motivated to bounce back in FIBA Asia Cup Qualifiers</p>
+                        <span>Nov 13, 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
