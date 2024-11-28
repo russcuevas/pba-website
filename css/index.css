@@ -89,6 +89,10 @@ nav {
     color: #ff6600;
 }
 
+.nav-links .active {
+    color: #ff6600;
+}
+
 .banner {
     height: 100vh;
     display: flex;
